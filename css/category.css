@@ -1,0 +1,120 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: white;
+}
+
+.newbooksdiv {
+    height: 90vh;
+    /* margin-top: 5%; */
+    display: flex;
+    justify-content: center;
+}
+
+.newbooks {
+    width: 80%;
+    height: 100%;
+}
+
+.newbooks img {
+    width: 228px;
+    height: 228px;
+}
+
+.newbookstitle h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#allbooks {
+    margin-bottom: 20px;
+}
+
+.allbooks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* background-color: red; */
+    gap: 10px;
+}
+
+.book {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.footer {
+    background-color: rgba(185, 201, 255, 255);
+    border-radius: 100px;
+    margin-top: 200px;
+}
+
+.footertext {
+    margin-top: 5%;
+    padding: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#footerlogo {
+    width: 220px;
+    height: 70px;
+}
+
+.storyshop {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    /* background-color: aqua; */
+
+}
+
+.catalog,
+.aboutus,
+.customerservices {
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+}
+
+.catalog a,
+.aboutus a,
+.customerservices a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+
+}
+
+.catalog a:hover,
+.aboutus a:hover,
+.customerservices a:hover {
+    color: white;
+}
+
+
+.footericons {
+    display: flex;
+    margin-left: 120px;
+    gap: 2%;
+    padding-bottom: 5%;
+}
+
+#arrow {
+    color: white;
+}
+
+.end {
+    background-color: rgba(30, 40, 50, 255);
+    color: rgba(93, 126, 242, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    height: 50px;
+}
