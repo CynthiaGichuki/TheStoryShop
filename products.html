@@ -1,0 +1,144 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Products</title>
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <div class="logo">
+        <img src="./images/logo.svg" alt="logo" id="logo">
+      </div>
+      <div class="sidebar-title">
+        <p>ADMIN DASHBOARD</p>
+      </div>
+      <div class="pages">
+
+        <div class="products sidebar-links highlighted">
+          <div>
+            <img src="./images/stock-icon.png" alt="">
+          </div>
+          <div class="links">
+            <a href="./products.html" id="highlight">Products</a>
+          </div>
+        </div>
+
+        <div class="order sidebar-links">
+          <div>
+            <img src="./images/order-icon.svg" alt="">
+          </div>
+          <div class="links">
+            <a href="./pages/orders/orders.html">Orders</a>
+          </div>
+        </div>
+
+        <div class="add-book sidebar-links">
+          <div class="sidebar-img">
+            <img src="./images/add-book-icon.svg" alt="">
+          </div>
+          <div class="links">
+            <a href="./pages/addBook/addBook.html">Add Book</a>
+          </div>
+        </div>
+
+        <div class="customers sidebar-links">
+          <div>
+            <img src="./images/customer-icon.svg" alt="">
+          </div>
+          <div class="links">
+            <a href="./pages/customers/customers.html">Customers</a>
+          </div>
+        </div>
+        
+      </div>
+      <div class="logout">
+        <img src="./images/logout 1.svg" alt="">
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="carousel">
+        <div class="slides">
+          <div class="slide">
+            <img src="./images/stock-icon.png" alt="stock-icon">
+            <p>Products</p>
+          </div>
+          <div class="slide">
+            <img src="./images/customer-icon.svg" alt="customer-icon">
+            <p>Customers</p>
+          </div>
+          <div class="slide">
+            <img src="./images/add-book-icon.svg" alt="add-book-icon">
+            <p>Add Book</p>
+          </div>
+          <div class="slide">
+            <img src="./images/order-icon.svg" alt="order-icon">
+            <p>Orders</p>
+          </div>
+          <button class="prev-button">&lt;</button>
+          <button class="next-button">&gt;</button>
+        </div>
+      </div>
+
+      <div class="table-container">
+        <!-- <table class="table">
+          <th>Product ID</th>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Category</th>
+          <th>Price</th>
+
+          <tr>
+            <td>#adfha87</td>
+            <td>Harry Potter</td>
+            <td>J.K. Rowlings</td>
+            <td>Fiction</td>
+            <td>$20.54</td>
+          </tr>
+
+          <tr>
+            <td>#adfha87</td>
+            <td>Atomic Habits</td>
+            <td>James Clear</td>
+            <td>Self-help</td>
+            <td>$20.54</td>
+          </tr>
+
+          <tr>
+            <td>#adfha87</td>
+            <td>Unsupervised</td>
+            <td>Onan Thairu</td>
+            <td>Fantasy</td>
+            <td>$20.54</td>
+          </tr>
+
+          <tr>
+            <td>#adfha87</td>
+            <td>Becoming</td>
+            <td>Mark Mlango</td>
+            <td>Motivational</td>
+            <td>$20.54</td>
+          </tr>
+
+          <tr>
+            <td>#adfha87</td>
+            <td>Becoming</td>
+            <td>Michelle Obama</td>
+            <td>Self-help</td>
+            <td>$20.54</td>
+          </tr>
+        </table> -->
+      </div>
+    </div>
+  </div>
+  <!-- <script src="./dist/index.js"></script> -->
+  <script src="./js/productfetch.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+</html>

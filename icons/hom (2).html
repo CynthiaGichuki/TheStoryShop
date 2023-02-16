@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>The Story Shop</title>
+    <link rel="stylesheet" href="./css/homestyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="./js/corosel.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <style>
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            color: #fff;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="book-list">
+                <h2 class="text-center" id="searchResult"></h2>
+                <div id="list-output" class="">
+                    <div class="row">
+                        <!-- card  -->
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="topmain" id="topmain">
+                <div class="topmaincontent">
+                    <header>
+                        <div class="logoheader">
+                            <div class="searchdiv">
+                                <ion-icon name="search-outline"></ion-icon>
+                                <div id="input" class="input-group mx-auto col-lg-6 col-md-8 col-sm-12">
+                                    <input id="search-box" type="text" class="form-control"
+                                        placeholder="Search Books!...">
+                                    <button id="search" class="btn btn-primary" onclick="">Search</button>
+                                </div>
+                            </div>
+                            <div class="logodiv">
+                                <img src="./icons/logo.png">
+                            </div>
+
+                            <div class="accountdiv">
+                                <div class="accounticon">
+                                    <ion-icon name="person-outline"></ion-icon>
+                                    <b>Account</b>
+                                </div>
+                                <div class="shoppingicon">
+                                    <ion-icon name="bag-handle-outline"></ion-icon>
+                                    <b>Shopping</b>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- <hr> -->
+                        <div class="navbar">
+                            <a href="category.html" class="romance"> Romance</a>
+                            <a href="category.html" class="romance"> Horror</a>
+                            <a href="category.html" class="romance"> Adventure</a>
+                            <a href="category.html" class="romance"> Classics</a>
+                            <a href="category.html" class="romance"> Crime</a>
+                            <a href="category.html" class="romance"> Historical</a>
+                            <a href="category.html" class="romance"> Self-Help</a>
+
+                        </div>
+                    </header>
+
+                    <div class="collectionmain">
+
+                        <div class="carousel   col-2">
+                            <div class="collections fade">
+                                <div class="coll">
+                                    <h1>Collections</h1>
+                                    <p><b>Discover Your New Favourite Book Today! <br><br> Browse Our Wide
+                                            Selection Of
+                                            Bestsellers, <br><br>
+                                            New Releases, And Hidden Gems</b></p>
+                                    <button id="shopnow">
+                                        <ion-icon name="bag-handle-outline"></ion-icon>
+                                        SHOP NOW
+                                    </button>
+                                </div>
+                                <div class="passionwithin">
+                                    <img src="./images/Hero 1.svg">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel   col-2">
+                            <div class="collections fade">
+                                <div class="coll">
+                                    <h1>Trending</h1>
+                                    <p><b>Discover Your New Favourite Book Today! <br><br> Browse Our Wide Selection Of
+                                            Bestsellers, <br><br>
+                                            New Releases, And Hidden Gems</b></p>
+                                    <button id="shopnow">
+                                        <ion-icon name="bag-handle-outline"></ion-icon>
+                                        SHOP NOW
+                                    </button>
+                                </div>
+                                <div class="passionwithin">
+                                    <img src="./images/blue woman.jpeg">
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="carousel   col-2">
+                            <div class="collections fade">
+                                <div class="coll">
+                                    <h1>Collections</h1>
+                                    <p><b>Discover Your New Favourite Book Today! <br><br> Browse Our Wide
+                                            Selection Of
+                                            Bestsellers, <br><br>
+                                            New Releases, And Hidden Gems</b></p>
+                                    <button id="shopnow">
+                                        <ion-icon name="bag-handle-outline"></ion-icon>
+                                        SHOP NOW
+                                    </button>
+                                </div>
+                                <div class="passionwithin">
+                                    <img src="./images/books.jpeg">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <!-- <div style="text-align:center">
+                      <span class="dot" onclick="currentSlide(1)"></span>
+                      <span class="dot" onclick="currentSlide(2)"></span>
+                      <span class="dot" onclick="currentSlide(3)"></span>
+                  </div> -->
+
+            </div>
+
+
+        </div>
+        <div class="authorsdiv" id="authorsdiv">
+            <div class="authors">
+                <div class="authorslist">
+                    <div class="william"><b>William Shakespeare</b>
+                    </div>
+                    <div class="michelle"><b>Michelle Obama</b></div>
+                    <div class="Stephen"><b>Stephen King</b></div>
+                    <div class="Rowling"><b>J.K Rowling</b></div>
+                </div>
+
+                <div class="popularauthors">
+                    <div id="verticaltext">Explore Popular Authors</div>
+                    <div class="section1">
+                        <!-- <img src="./images/Becoming.jpg"> -->
+                    </div>
+                    <div class="section2">
+                        <!-- <img src="./images/findpeople.jpg"> -->
+                        <!-- <img src="./images/atomichabits.jpg"> -->
+                    </div>
+                    <div class="section3">
+                        <!-- <img src="./images/TastesLikeShakkar.jpg"> -->
+                    </div>
+
+                </div>
+                <div id="activity-modal"></div>
+            </div>
+        </div>
+
+        <div class="newbooksdiv">
+            <div class="newbooks">
+                <div class="newbookstitle">
+                    <h2><b>New Books</b></h2>
+                </div>
+
+                <p id="allbooks"><b>All Books</b></p>
+                <div class="allbooks">
+                    <div class="book">
+                        <img src="./images/knock-knock.jpg">
+                        <p><b>Knock Knock</b></p>
+                        <p><b>$63.85</b></p>
+
+                    </div>
+                    <div class="book">
+                        <img src="./images/dating_dr_dil.jpg">
+                        <p><b>Dating Dr Dil</b></p>
+                        <p><b>$63.85</b></p>
+                    </div>
+
+                    <div class="book">
+                        <img src="./images/thewonkeydonkey.jpg">
+                        <p><b>The Wonkey Donkey</b></p>
+                        <p><b>$63.85</b></p>
+
+                    </div>
+                    <div class="book">
+                        <img src="./images/CBT.jpg">
+                        <p><b>CBT</b></p>
+                        <p><b>$63.85</b></p>
+
+                    </div>
+                    <div class="book">
+                        <img src="./images/honeyandspice.jpg">
+                        <p><b>Honey and Spice</b></p>
+                        <p><b>$63.85</b></p>
+
+                    </div>
+                    <div class="book">
+                        <img src="./images/thehuntingparty.jpg">
+                        <p><b>The Hunting Party</b></p>
+                        <p><b>$63.85</b></p>
+
+                    </div>
+                    <div class="book">
+                        <img src="./images/itendswithus.jpg">
+                        <p><b>It Ends with Us</b></p>
+                        <p><b>$63.85</b></p>
+
+                    </div>
+                    <div class="book">
+                        <img src="./images/moana.jpg">
+                        <p><b>Moana</b></p>
+                        <p><b>$63.85</b></p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="harrypotterback">
+            <div class="logobackground"><img src="./icons/logo.png"></div>
+            <div class="harrypotter">
+                <div class="harrypotterlogo"><img src="./icons/logo.png"></div>
+                <div>
+                    <p>Books, The Ultimate Escape, Get Lost In<br><br>The Pages Where The Adventure
+                        Begins<br><br>And
+                        Escape
+                        To
+                        A World Of Imagination</p><br>
+                </div>
+                <button id="seecollection">
+                    <b>SEE COLLECTION</b>
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="bestsellersdiv">
+            <div class="bestsellerstitle">
+                <h2><b>Best Sellers</b></h2>
+            </div>
+            <div class="upperdiv">
+                <div class="bestsellers">
+                    <div class="best">
+                        <img src="./images/paris.jpg">
+                        <p><b>Lost and Found In Paris</b></p>
+                        <p><b>$63.85</b></p>
+                    </div>
+                    <div class="best">
+                        <img src="./images/lessonsinchemistry.jpg">
+                        <p><b>Lessons in Chemistry</b></p>
+                        <p><b>$63.85</b></p>
+
+                    </div>
+                    <div class="best">
+                        <img src="./images/thankyou.jpg">
+                        <p><b>Thank You for Listening</b></p>
+                        <p><b>$63.85</b></p>
+
+                    </div>
+                    <div class="best">
+                        <img src="./images/theweddingcrasher.jpg">
+                        <p><b>The Wedding Crasher</b></p>
+                        <p><b>$63.85</b></p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footertext">
+                <div class="storyshop">
+                    <div><img id="footerlogo" src="./icons/logo.png"></div>
+                    <div>
+                        <p>Fuel Your Imagination With A Never Ending Supply of Stories!<br><br> Visit Us To Explore
+                            A
+                            World
+                            Of
+                            Possibilities And Be Transported<br><br>To New Realms With Every Turn Of The Page.</p>
+                    </div>
+
+                </div>
+                <div class="catalog">
+                    <div>
+                        <h3>CATALOG</h3>
+                    </div>
+                    <a href="category.html" class="romance"> Horror</a>
+                    <a href="category.html" class="romance"> Adventure</a>
+                    <a href="category.html" class="romance"> Classics</a>
+                    <a href="category.html" class="romance"> Crime</a>
+                </div>
+                <div class="aboutus">
+                    <div>
+                        <h3>ABOUT US</h3>
+                    </div>
+                    <a href="aboutus.html" class="aboutus">About Us</a>
+                </div>
+                <div class="customerservices">
+                    <div>
+                        <h3>CUSTOMER SERVICES</h3>
+                    </div>
+                    <a href="contact.html" class="contacts"> Contact Us</a>
+                </div>
+
+            </div>
+
+            <div class="footericons">
+                <ion-icon name="logo-facebook"></ion-icon>
+                <ion-icon name="logo-twitter"></ion-icon>
+                <ion-icon name="logo-linkedin"></ion-icon>
+            </div>
+        </div>
+        <div class="end">
+            <div class="copyright"> &copy; 2023 THE STORY SHOP.</div>
+            <div class="scroll">Scroll to the top
+                <ion-icon id="arrow" name="arrow-up-outline"></ion-icon>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <!-- 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script> -->
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script src="js/index.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/getPopular.js"></script>
+</body>
+
+</html>
