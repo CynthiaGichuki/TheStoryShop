@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/login.css"/>
+    <link rel="stylesheet" href="./css/homestyle.css"/>
+    <title>Login</title>
+</head>
+<body>
+  
+        
+    <div class="topmaincontent" id="topmaincontent">
+        <header>
+            <div id="logoheader">
+                <div class="logodiv">
+                   <a href="./home.html" ><img src="./icons/logo.png"></a>
+                </div>
+
+                <div class="accountdiv">
+                    <div class="accounticon">
+                        <ion-icon name="person-outline"></ion-icon>
+                        <b>Account</b>
+                    </div>
+                    <div class="shoppingicon">
+                        <ion-icon name="bag-handle-outline"></ion-icon>
+                        <b>Shopping</b>
+
+                    </div>
+                    <div class="shoppingicon">
+                        <a href="./signup.html">Sign Up</a>
+
+                    </div>
+                </div>
+
+            </div>
+        </header>    
+    </div>
+
+    <div id="login">  
+        <div  class="login_top"> 
+        </div>
+        <div class="login_bottom ">
+            <div><img src=""/></div>
+          <h3>LOGIN BELOW</h3>
+          <h4>Make sure you input correct credentials</h4>
+        <div class="form">
+          <div id="error"></div>
+          <form id="signup-form" class="signIn">
+            <div>
+              <input type="text" id="Email" placeholder="Email"/>
+              <p id="email-error"></p>
+            </div>
+            <div>
+              <input type="password" id="password" placeholder="Password"/>
+              <p id="password-error"></p>
+            </div>
+            <div id="fpas">Forgot Password?</div>
+            <div>
+              <button type="submit">LOGIN</button>
+            </div>
+            <div>
+              <p id="href"><span><hr/></span>OR <span><hr/></span></p>
+              <p>NEED AN ACCOUNT? <a href="./signup.html">REGISTER</a></p>
+            </div>
+          </form>
+          
+        </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footertext">
+            <div class="storyshop">
+                <div><img id="footerlogo" src="./icons/logo.png"></div>
+                <div>
+                    <p>Fuel Your Imagination With A Never Ending Supply of Stories!<br><br> Visit Us To Explore
+                        A
+                        World
+                        Of
+                        Possibilities And Be Transported<br><br>To New Realms With Every Turn Of The Page.</p>
+                </div>
+            </div>
+            <div class="catalog">
+                <div>
+                    <h3>CATALOG</h3>
+                </div>
+                <div>Horror</div>
+                <div>Adventure</div><div>Romance</div>
+                <div>Mystery</div>
+                <div>Fantasy</div>
+            </div>
+            <div class="contactus">
+                <div>
+                    <h3>CONTACT US</h3>
+                </div>
+                <div>
+                    <ion-icon name="location-outline"></ion-icon>
+                    <span>1234 Fictional St, Imaginary City</span>
+                </div>
+                <div>
+                    <ion-icon name="mail-outline"></ion-icon>
+                    <span>info@storyshop.com</span>
+                </div>
+                <div>
+                    <ion-icon name="call-outline"></ion-icon>
+                    <span>+1 234 567 8901</span>
+                </div>
+            </div>
+        </div>
+    </div>
+  <script src="./js/userlogin.js" defer></script>
+</body>
+</html>
