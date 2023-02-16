@@ -1,0 +1,155 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="./orders.css">
+  <title>Orders</title>
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <div class="logo">
+        <img src="../../images/logo.svg" alt="logo" id="logo">
+      </div>
+      <div class="sidebar-title">
+        <p>ADMIN DASHBOARD</p>
+      </div>
+      <div class="pages">
+
+        <div class="products sidebar-links">
+          <div>
+            <img src="../../images/stock-icon.png" alt="">
+          </div>
+          <div class="links">
+            <a href="../../products.html">Products</a>
+          </div>
+        </div>
+
+        <div class="order sidebar-links highlighted">
+          <div>
+            <img src="../../images/order-icon.svg" alt="">
+          </div>
+          <div class="links">
+            <a href="../orders/orders.html">Orders</a>
+          </div>
+        </div>
+
+        <div class="add-book sidebar-links">
+          <div class="sidebar-img">
+            <img src="../../images/add-book-icon.svg" alt="">
+          </div>
+          <div class="links">
+            <a href="../addBook/addBook.html">Add Book</a>
+          </div>
+        </div>
+
+        <div class="customers sidebar-links">
+          <div>
+            <img src="../../images/customer-icon.svg" alt="">
+          </div>
+          <div class="links">
+            <a href="../customers/customers.html">Customers</a>
+          </div>
+        </div>
+        
+      </div>
+      <div class="logout">
+        <img src="../../images/logout 1.svg" alt="">
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="carousel">
+        <div class="slides">
+          <div class="slide">
+            <img src="../../images/stock-icon.png" alt="stock-icon">
+            <p>Products</p>
+          </div>
+          <div class="slide">
+            <img src="../../images/customer-icon.svg" alt="customer-icon">
+            <p>Customers</p>
+          </div>
+          <div class="slide">
+            <img src="../../images/add-book-icon.svg" alt="add-book-icon">
+            <p>Add Book</p>
+          </div>
+          <div class="slide">
+            <img src="../../images/order-icon.svg" alt="order-icon">
+            <p>Orders</p>
+          </div>
+          <button class="prev-button">&lt;</button>
+          <button class="next-button">&gt;</button>
+        </div>
+      </div>
+
+      <div class="table-container">
+        <table>
+          <th>Order ID</th>
+          <th>User ID</th>
+          <th>Product ID</th>
+          <th>Quantity</th>
+          <th>Total</th>
+          <th>Status</th>
+          <th>Date</th>
+
+          <tr>
+            <td>#WIERTS878</td>
+            <td>#ALDFGAI87502</td>
+            <td>#AAFOA8252T</td>
+            <td>3</td>
+            <td>$210.54</td>
+            <td class="pending">pending</td>
+            <td>23/12/2022</td>
+          </tr>
+
+          <tr>
+            <td>#WIERTS878</td>
+            <td>#ALDFGAI87502</td>
+            <td>#AAFOA8252T</td>
+            <td>3</td>
+            <td>$210.54</td>
+            <td>Delivered</td>
+            <td>23/12/2022</td>
+          </tr>
+
+          <tr>
+            <td>#WIERTS878</td>
+            <td>#ALDFGAI87502</td>
+            <td>#AAFOA8252T</td>
+            <td>3</td>
+            <td>$210.54</td>
+            <td class="pending">pending</td>
+            <td>23/12/2022</td>
+          </tr>
+
+          <tr>
+            <td>#WIERTS878</td>
+            <td>#ALDFGAI87502</td>
+            <td>#AAFOA8252T</td>
+            <td>3</td>
+            <td>$210.54</td>
+            <td>Delivered</td>
+            <td>23/12/2022</td>
+          </tr>
+
+          <tr>
+            <td>#WIERTS878</td>
+            <td>#ALDFGAI87502</td>
+            <td>#AAFOA8252T</td>
+            <td>3</td>
+            <td>$210.54</td>
+            <td class="pending">pending</td>
+            <td>23/12/2022</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <script src="../../dist/index.js"></script>
+</body>
+</html>

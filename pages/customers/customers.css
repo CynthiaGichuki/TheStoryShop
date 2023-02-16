@@ -1,0 +1,37 @@
+.bookView {
+  width: 80vw;
+  margin: 5em auto;
+}
+.book-img img {
+  width: 60%;
+  height: 100%;
+}
+.book-img {
+  /* background-color: rgb(71, 168, 168); */
+  text-align: center;
+  width: 50%;
+}
+.bookView-container {
+  margin: 4em auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  background-color: #fff;
+  width: 70%;
+  padding: 3em;
+}
+.description {
+  width: 50%;
+}
+.description p {
+  font-size: .6em;
+  font-weight: 600;
+  /* background-color: aqua; */
+  /* letter-spacing: .3em; */
+  line-height: 2em;
+}
+#price {
+  font-size: 1em;
+  font-weight: 900;
+}
